@@ -1,0 +1,19 @@
+notifications:
+  email:
+    recipients:
+     - romeshselvan@hotmail.co.uk
+
+    on_success: never
+    on_failure: change
+
+# safelist
+branches:
+  only:
+  - master
+
+language: java
+
+ Build the Java app
+jdk:
+  - oraclejdk8
+script: mvn clean install
