@@ -4,7 +4,8 @@ An asynchronous Java 8 Memcached client, using Java 8 Completable Futures throug
 an excellent and fast memchached client implementation : https://github.com/couchbase/spymemcached
 
 #### Build Status
-(Soon to come)
+
+[![Build Status](https://travis-ci.org/rselvanathan/completable-memcached.svg?branch=master)](https://travis-ci.org/rselvanathan/completable-memcached)
 
 #### Maven central
 (Soon to come)
