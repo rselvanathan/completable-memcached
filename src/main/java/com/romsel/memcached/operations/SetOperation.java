@@ -6,6 +6,8 @@ import net.spy.memcached.ops.StoreOperation;
 import java.util.concurrent.CompletableFuture;
 
 /**
+ * Will return a completed future once the call has been successful
+ *
  * @author Romesh Selvan
  */
 public class SetOperation implements StoreOperation.Callback {

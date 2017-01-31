@@ -76,7 +76,7 @@ public class SpyMemcachedClient extends net.spy.memcached.MemcachedClient {
      * @param key the key to store the object under
      * @param object the object to be stored
      * @param <T> The type of the object being stored
-     * @return
+     * @return A {@link CompletableFuture} whose result will let the user know whether or not the save was successful
      */
     public <T extends Serializable> CompletableFuture<Boolean> set(String key, T object) {
        return set(key, object, MemcachedConstants.ONE_WEEK);
