@@ -41,7 +41,7 @@ client shutdown(60L, TimeUnit.SECONDS);
 Using the client :
 
 ```java
-// Get an object of object type "String" 
+// Get an object of type "String" 
 String cacheKey = "key";
 CompletableFuture<Optional<String>> cachedObjectResponse = client.get(cacheKey);
 ```
@@ -56,7 +56,7 @@ CompletableFuture<Boolean> objectAddedResponse = client.set(cacheKeyToAdd, data,
 CompletableFuture<Boolean> objectAddedResponse = client.set(cacheKeyToAdd, data);
 ```
 ```java
-// Delete and object in the cache
+// Delete an object in the cache
 String cacheKeyToDelete = "key";
 CompletableFuture<Boolean> objectAddedResponse = client.delete(cacheKeyToAdd, data);
 ```
