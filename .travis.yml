@@ -16,7 +16,10 @@ language: java
  Build the Java app
 jdk:
   - oraclejdk8
-script:
+
+before_script:
 - openssl aes-256-cbc -K "$ENCRYPT_K" -iv "$ENCRYPT_IV" -in "./codesign.asc.enc" -out "./codesign.asc" -d
 - gpg --fast-import ./codesign.asc
+
+script:
 - mvn clean install
