@@ -12,6 +12,7 @@ branches:
   - master
 
 language: java
+sudo: required
 
  Build the Java app
 jdk:
