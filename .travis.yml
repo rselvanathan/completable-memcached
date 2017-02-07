@@ -18,9 +18,9 @@ sudo: required
 jdk:
   - oraclejdk8
 
-before_script:
+script:
 - openssl aes-256-cbc -K "$ENCRYPT_K" -iv "$ENCRYPT_IV" -in "./codesign.asc.enc" -out "./codesign.asc" -d
 - gpg --fast-import ./codesign.asc
 
-script:
+after_success:
 - mvn clean install
